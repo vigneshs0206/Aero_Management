@@ -2,7 +2,7 @@ package com.ta.airlines.model;
 
 import java.sql.Timestamp;
 
-public class BookingHistoryResponse {
+public class Bookings {
 	private Integer bookingId;
 	private Integer userId;
 	private Integer flightId;
@@ -15,6 +15,21 @@ public class BookingHistoryResponse {
 	private String destination;
 	private Timestamp departureTime;
 	private Timestamp arrivalTime;
+
+	public Bookings() {
+
+	}
+
+	public Bookings(Integer bookingId, Integer userId, Integer flightId, Timestamp bookingDate, String status,
+			String ticketNumber, Timestamp createdAt) {
+		this.bookingId = bookingId;
+		this.userId = userId;
+		this.flightId = flightId;
+		this.bookingDate = bookingDate;
+		this.status = status;
+		this.ticketNumber = ticketNumber;
+		this.createdAt = createdAt;
+	}
 
 	public Integer getBookingId() {
 		return bookingId;

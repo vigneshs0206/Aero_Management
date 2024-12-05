@@ -7,11 +7,9 @@ public interface UsersDAO {
 	
 	Users getUserByEmail(String email);
 
+//	boolean getUserByEmail(String email);
+	
 	List<Users> getAllUsers();
-
-	boolean deleteUser(Users user);
-
-	boolean updateUser(Users user);
 
 	boolean createUser(Users user);
 	
